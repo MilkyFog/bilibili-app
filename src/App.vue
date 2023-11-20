@@ -1,28 +1,31 @@
 <template>
-  <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <div>
+    <div class="w-250px">
+      <TitleMenu :isActive="isActive" @active="isActive = true">
+        <template #title>
+          发现频道
+        </template>
+        <template v-slot:icon>
+          >
+        </template>
+      </TitleMenu>
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
-
+import TitleMenu from '@/components/TitleMenu.vue';
 export default {
-  name: 'App',
   components: {
-    HelloWorld
+    TitleMenu,
+  },
+  data() {
+    return {
+      isActive: true
+    }
   }
 }
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style scoped>
 </style>
