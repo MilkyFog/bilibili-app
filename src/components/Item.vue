@@ -1,6 +1,6 @@
 <template>
   <div 
-    class="item w-100% h-100% cursor-pointer hover:bg-#f4f4f4 b-C" 
+    class="item w-100% h-100% cursor-pointer hover:bg-#f4f4f4" 
     :class="{ active: isActive }" 
     @click="handleClickItem"
   >
@@ -26,6 +26,9 @@ export default {
 </script>
 
 <style>
+.item {
+  transition: 0.2s;
+}
 .active {
   background-color: #e7e7e7;
 }
