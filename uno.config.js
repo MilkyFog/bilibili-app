@@ -3,9 +3,9 @@ import {
   defineConfig,
   presetAttributify,
   presetMini,
-  transformerVariantGroup,
 } from "unocss";
 import presetIcons from "@unocss/preset-icons";
+import transformerDirectives from "@unocss/transformer-directives";
 export default defineConfig({
   presets: [
     presetAttributify(),
@@ -26,7 +26,7 @@ export default defineConfig({
       }
     }
   ],
-  transformers: [transformerVariantGroup()],
+  transformers: [transformerDirectives()],
   rules: [
   ],
   shortcuts: {
