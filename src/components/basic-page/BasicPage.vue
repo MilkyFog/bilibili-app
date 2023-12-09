@@ -1,6 +1,6 @@
 <script>
-import SearchLine from './SearchLine.vue';
-import SearchItem from './SearchItem.vue';
+import SearchLine from '@/components/basic-page/search-line/SearchLine.vue';
+import SearchItem from '@/components/basic-page/search-line/SearchItem.vue';
 import Tool from './Tool.vue';
 import MainTable from './MainTable.vue';
 import Pagination from './Pagination.vue'

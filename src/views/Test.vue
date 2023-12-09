@@ -1,19 +1,13 @@
 <template>
   <div class="test">
     <!-- 现在版本不支持 不然可以更加简单 v-model:tableData -->
-    <BasicPage></BasicPage>
+    <ConcludeFile></ConcludeFile>    
   </div>
 </template>
 
 <script setup>
-import InputItem from '@/search/InputItem'
-import SelectItem from '@/search/SelectItem'
-import MyBudgetTable from '../budget-table/MyBudgetTable.vue';
-import Tool from '../components/basic-page/Tool.vue';
-import MainTable from '../components/basic-page/MainTable.vue';
-import SearchLine from '../components/basic-page/SearchLine.vue';
-import BasicPage from '../components/basic-page/BasicPage.vue';
 import { ref } from 'vue';
+import ConcludeFile from './ConcludeFile.vue';
 const test = () => {
   console.log('Test: test')
 }
